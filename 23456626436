@@ -1,0 +1,101 @@
+# MyFile = open('practice.txt','r')
+# #-- 여기에 들어갈 내용 3개
+# MyFile.close()
+
+#1. read 사용하는 경우
+# MyFile = open('practice.txt','r')
+# print(MyFile.read().count("\n")+1)
+# MyFile.close()
+
+#2 readline() 사용하는 경우
+# 읽어들일 값이 없을 때까지 count를 매번 해야됨
+# MyFile = open('practice.txt','r')
+# cnt = 0
+# while True:
+#     if MyFile.readline() == '':
+#         break
+#     cnt += 1
+# print(cnt)
+# MyFile.close()
+
+#3. readlines()
+# MyFile = open('practice.txt','r')
+# print(len(MyFile.readline()))
+# MyFile.close()
+
+#문제 1. 1이상 10미만의 두 개의 정수를 입력받아서 작은 수부터 큰 수까지의
+# 구구단을 차례대로 출력하는 프로그램을 구조화하여 작성하시오.
+
+#입력 예시
+#3, 5
+
+#출력 예시
+# == 3dan ==
+# 3 * 1 = 3
+# 3 * 2 = 6
+# 3 * 3 = 9
+# 3 * 4 = 12
+# 3 * 5 = 15
+# 이어서
+
+# == 4dan ==
+# 4 * 1 = 4
+# 이어서
+
+
+# A = int(input())
+# B = int(input())
+# D = 0
+# for i in range(B):
+#     D += 1
+#     print(A * D)
+
+# def A(a,b):
+# a = int(input())
+# b = int(input())
+# D = 0
+# while True:
+#     D += 1
+#     print("%d * %d = %d"%(a , D , a * D))
+#     if D >= 9:
+#         D = 0
+#         a += 1
+#     elif a == 6:
+#         break
+
+# def googoodan(n):
+#     print("==%ddan=="%n)
+#     for i in range(1,10):
+#         print("%d * %d = %d"%(n, i, n*i))
+#     print()
+
+# a, b = map(int, input().split())
+
+# for n in range(min(a,b), max(a,b)+1):
+#     googoodan(n)
+
+#a = int(inpue())
+#b = int(inpue())
+
+# def Ra():
+#     print("@@@@@@@@@@")
+# B = 0
+# while True:
+#     A = "first"
+#     B += 1
+#     if B == 5:
+#         break
+#     print(A)
+#     print(Ra())
+
+# def print_10():
+#     print("@"*10)
+
+# def BF(n):
+#     for i in range(1, n+1):
+#         for j in range(1, n+1):
+#             print(i*j, end=' ')
+#         print()
+    
+# n = int(input())   
+# BF(n)
